@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body {background-color: coral;
+			 min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+		}
+		#one{
+  background-color:red;
+  border-radius: 15px;
+  border: 2px solid black;
+    height: 280px;
+  width: 200px;
+   position: relative;
+   transition: width 2s;
+
+
+ 
+  
+
+ 
+
+}
+#two{
+  background-color: blue;
+  border-radius: 15px;
+  border: 2px solid black;
+    height: 280px;
+  width: 200px;
+   margin-top:-280px;
+   margin-left: 300px;
+   position: relative;
+
+}
+#three{
+  background-color: cyan;
+  border-radius: 15px;
+  border: 2px solid black;
+    height: 280px;
+  width: 200px;
+   margin-left: -10px;
+  margin-top:30px;
+  position: relative;
+}
+#four{
+  background-color: yellow;
+  border-radius: 15px;
+  border: 2px solid black;
+    height: 280px;
+  width: 200px;
+  margin-top:-285px;
+  margin-left: 300px;
+  position: relative;
+}
+#five{
+  background-color: green;
+  border-radius: 15px;
+  border: 2px solid black;
+    height: 280px;
+  width: 200px;
+  margin-top:-410px;
+  margin-left: 150px;
+  position: relative;
+  
+
+}
+#container{
+	
+	height: 600px;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+	<h1 style="font-size:60px;align-content: center;">TASK 2 </h1>
+	
+	<div id="container">
+		
+
+		<div id="one" onClick="first()"><p style="text-align:center">one</p></div>
+		<div id="two" onClick="two()"><p style="text-align:center" >two</p></div>
+		<div id="three" onClick="three()"><p style="text-align:center">three</p></div>
+		<div id="four" onClick="four()"><p style="text-align:center">four</p></div>
+		<div id="five" onClick="five()"><p style="text-align:center">five</p></div>
+		</div>
+		<script type="text/javascript">
+			let count=false
+			let counttwo=false
+			let countthree=false
+			let countfour=false
+			let countfive=false
+			function first(){
+				if (count==false) {
+					document.getElementById("one").style.zIndex = "1"
+					document.getElementById("one").style.opacity = "0.8"
+					document.getElementById("one").style.border = "2px solid gold"
+
+					count=true
+				}else{
+					document.getElementById("one").style.zIndex = "auto"
+					document.getElementById("one").style.opacity = "1"
+					document.getElementById("one").style.border = "2px solid black"
+					
+					count=false
+
+				}
+				
+				
+
+			}
+			function two(){
+				if (counttwo==false) {
+					document.getElementById("two").style.zIndex = "1"
+					document.getElementById("one").style.zIndex = "1"
+					document.getElementById("two").style.opacity = "0.8"
+					document.getElementById("one").style.opacity = "0.8"
+					document.getElementById("one").style.border = "2px solid gold"
+					document.getElementById("two").style.border = "2px solid gold"
+					counttwo=true
+				}else{
+					document.getElementById("two").style.zIndex = "auto"
+					document.getElementById("one").style.zIndex = "auto"
+					document.getElementById("two").style.opacity = "1"
+					document.getElementById("two").style.border = "2px solid black"
+					document.getElementById("one").style.opacity = "1"
+					document.getElementById("one").style.border = "2px solid black"
+
+					counttwo=false
+				}
+				
+					
+				
+
+				
+			}
+			function three(){
+				if (countthree==false) {
+					document.getElementById("three").style.zIndex = "1"
+					document.getElementById("two").style.zIndex = "1"
+					document.getElementById("one").style.zIndex = "1"
+					document.getElementById("three").style.opacity = "0.8"
+					document.getElementById("three").style.border = "2px solid gold"
+					document.getElementById("two").style.opacity = "0.8"
+					document.getElementById("one").style.opacity = "0.8"
+					document.getElementById("one").style.border = "2px solid gold"
+					document.getElementById("two").style.border = "2px solid gold"
+					countthree=true
+				}else{
+					document.getElementById("three").style.zIndex = "auto"
+					document.getElementById("two").style.zIndex = "auto"
+					document.getElementById("one").style.zIndex = "auto"
+					document.getElementById("three").style.opacity = "1"
+					document.getElementById("three").style.border = "2px solid black"
+						document.getElementById("two").style.opacity = "1"
+					document.getElementById("two").style.border = "2px solid black"
+					document.getElementById("one").style.opacity = "1"
+					document.getElementById("one").style.border = "2px solid black"
+
+					countthree=false
+
+
+				}
+				
+			}
+			function four(){
+				if (countfour==false) {
+					document.getElementById("four").style.zIndex = "1"
+					document.getElementById("four").style.opacity = "0.8"
+					document.getElementById("four").style.border = "2px solid gold"
+					document.getElementById("three").style.zIndex = "1"
+					document.getElementById("two").style.zIndex = "1"
+					document.getElementById("one").style.zIndex = "1"
+					document.getElementById("three").style.opacity = "0.8"
+					document.getElementById("three").style.border = "2px solid gold"
+					document.getElementById("two").style.opacity = "0.8"
+					document.getElementById("one").style.opacity = "0.8"
+					document.getElementById("one").style.border = "2px solid gold"
+					document.getElementById("two").style.border = "2px solid gold"
+					countfour=true
+				}else{
+					document.getElementById("four").style.zIndex = "auto"
+					document.getElementById("four").style.opacity = "1"
+					document.getElementById("four").style.border = "2px solid black"
+						document.getElementById("three").style.zIndex = "auto"
+					document.getElementById("two").style.zIndex = "auto"
+					document.getElementById("one").style.zIndex = "auto"
+					document.getElementById("three").style.opacity = "1"
+					document.getElementById("three").style.border = "2px solid black"
+						document.getElementById("two").style.opacity = "1"
+					document.getElementById("two").style.border = "2px solid black"
+					document.getElementById("one").style.opacity = "1"
+					document.getElementById("one").style.border = "2px solid black"
+					countfour=false
+
+				}
+
+				
+			}
+			function five(){
+				if (countfive==false) {
+					
+					countfive=true
+					console.log(countfive)
+
+				}else{
+					console.log("came in")
+					document.getElementById("five").style.zIndex = "auto"
+					document.getElementById("five").style.opacity = "1"
+					countfive=false
+
+				}
+				
+			}
+
+			
+		</script>
+
+
+</body>
+</html>
